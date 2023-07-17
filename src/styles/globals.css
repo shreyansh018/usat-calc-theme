@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --text-color: #ffffff;
+    --text-color2: rgb(30 41 59);
+    --text-color3: #4657a1;
+    --fill-color: #4657a1;
+    --fill-color2: #f5f7ff;
+    --font-weight: 600;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .theme-usat {
+    --text-color: rgba(24, 23, 22, 1);
+    --text-color2: #333333;
+    --text-color3: #1365ce;
+    --text-color4: #ffffff;
+    --text-color5: #1665ce;
+    --text-color6: #737373;
+    --text-color7: #039855;
+    --text-color8: #525150;
+    --fill-color: #1665ce;
+    --fill-color2: #228e5e;
+    --fill-color3: #00553c;
+    --fill-color4: #ededed;
+    --fill-color5: #63c180;
+    --fill-color6: #228e5e;
+    --fill-color7: #33b274;
+    --font-weight: 700;
+    --font-weight2: 400;
+    --font-size: 32px;
+    --font-size2: 16px;
+    --font-size3: 18px;
+    --font-size4: 12px;
+    --font-size5: 14px;
+    --font-style: normal;
+    --font-family: "Georgia", serif;
+    --font-family2: "Raleway", sans-serif;
+    --font-family3: "ui-sans-serif";
+
+    --gradient-color-start: #00553c; /* Start color */
+    --gradient-color-end: #3cc37d; /* End color */
+    --gradient: linear-gradient(
+      to right,
+      var(--gradient-color-start),
+      var(--gradient-color-end)
+    );
+  }
 }
